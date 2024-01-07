@@ -1,1 +1,18 @@
 theme: minima
+
+# Set which comment system to use
+comments:
+  provider:            giscus
+
+# You must install giscus github app before use. (https://github.com/apps/giscus)
+# Make sure all variables are set properly. Check below link for detail.
+# https://giscus.app/
+giscus:
+  repo:                "techyuzhu/blog"
+  repo-id:             "R_kgDOKx8m2Q"
+  category:            "Announcements"
+  category-id:         "DIC_kwDOKx8m2c4CcQCo"
+  mapping:             "pathname"
+  reaction-enabled:    "1"
+  theme:               "preferred_color_scheme"
+  crossorigin:         "anonymous"
