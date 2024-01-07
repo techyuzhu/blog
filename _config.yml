@@ -45,13 +45,17 @@ defaults:
       layout: single
       author_profile: true
       show_date: true
-      read_time: true
+      # read_time: true
       comments: true
       share: true
       related: true
+      header:
+        image: /assets/images/header_grand_canyon_2.jpg
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       author_profile: true
+      header:
+        image: /assets/images/header_grand_canyon.jpg
