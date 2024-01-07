@@ -3,7 +3,28 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-include-cache
 
+minimal_mistakes_skin: "air"  # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+locale: "en-US"
+
 repository: "techyuzhu/blog"
+
+title: "Babbling of an Engineer"
+name: "Yuzhu Shen"
+description: "Some thoughts and observations of a software engineer."
+url: "https://techyuzhu.github.io"
+timezone: "America/Los_Angeles"
+
+author:
+  name     : "Yuzhu Shen"
+  #avatar   : "/assets/images/bio-photo.jpg"
+  bio      : "Software engineer."
+  location : "SF bay area, USA"
+
+search: true
+lunr:
+  search_within_pages: true
+  search_full_content: true
 
 comments:
   provider: "giscus"
@@ -21,4 +42,16 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
       comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      author_profile: true
