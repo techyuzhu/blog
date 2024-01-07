@@ -1,5 +1,24 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-# Plugins
 plugins:
   - jekyll-include-cache
+
+repository: "techyuzhu/blog"
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : "R_kgDOKx8m2Q"  # Shown during giscus setup at https://giscus.app
+    category_name        : "Announcements"  # Full text name of the category
+    category_id          : "DIC_kwDOKx8m2c4CcQCo"  # Shown during giscus setup at https://giscus.app
+    discussion_term      : "pathname"  # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : '1'  # '1' for enabled (default), '0' for disabled
+    theme                : "preferred_color_scheme"  # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: true
